@@ -34,8 +34,8 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-700 italic">
               <li><a href="#" className="hover:text-gray-900 transition italic">Inicio</a></li>
               <li><a href="#" className="hover:text-gray-900 transition italic">Puestos de comida</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition italic">Menús</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition italic">Promociones</a></li>
+              <li><a href="#sobre-nosotros" className="hover:text-gray-900 transition italic">Sobre Nosotros</a></li>
+              <li><a href="#descargas" className="hover:text-gray-900 transition italic">Descargar</a></li>
             </ul>
           </div>
 

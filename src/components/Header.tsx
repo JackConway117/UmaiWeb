@@ -22,8 +22,8 @@ export default function Header() {
     }
   };
 
-  const pinkMain = "#F4B6B6";
-  const pinkHover = "#F19292";
+  const pinkMain = "#FF7B7B";
+  const pinkHover = "#FF7B7B";
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 italic">

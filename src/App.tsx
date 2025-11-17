@@ -4,9 +4,7 @@ import HeroSection from "./components/HeroSection";
 import ExploreDishes from "./components/ExploreDishes";
 import DownloadSection from "./components/DownloadSection";
 import Footer from "./components/Footer";
-import NotFound from "./components/NotFound";
-import Register from "./pages/Register";
-import ReviewComponent from "./components/ReviewComponent";
+import AboutUsSection from "./components/AboutUsSection";
 
 
 function App() {
@@ -20,27 +18,17 @@ function App() {
     return () => window.removeEventListener("popstate", onPop);
   }, []);
 
-  const isRoot = path === "/" || path === "";
-  const isRegister = path === "/register";
-
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        {isRoot ? (
           <>
             <HeroSection />
             <ExploreDishes />
-            <ReviewComponent />
+            <AboutUsSection />
             <DownloadSection />
-            
-
           </>
-        ) : isRegister ? (
-          <Register />
-        ) : (
-          <NotFound />
-        )}
+        
       </main>
 
       <Footer />

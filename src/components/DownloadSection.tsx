@@ -10,7 +10,8 @@ export default function DownloadSection() {
   };
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    
+    <section id="descargas" className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 lg:px-8">
         
         
