@@ -71,16 +71,30 @@ export default function AboutUsSection() {
           </div>
           
           {/* Placeholder para una imagen o gráfico de la app */}
-          <motion.div
-            className="flex justify-center items-center bg-gray-100 rounded-2xl shadow-lg h-80 lg:h-96"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <span className="text-gray-400 italic text-lg">
-              [Placeholder para gráfico/imagen de la App]
-            </span>
-          </motion.div>
+         <motion.div
+           className="rounded-2xl shadow-lg h-80 lg:h-96 overflow-hidden" // Mantenemos la animación y el estilo
+           initial={{ opacity: 0, scale: 0.8 }}
+           whileInView={{ opacity: 1, scale: 1 }}
+           transition={{ duration: 0.5 }}
+         >
+           {/*
+             ¡IMPORTANTE!
+             1. Asegúrate de que tu video (ej. "video-demo.mp4") esté en la carpeta 'public' de tu proyecto.
+             2. Cambia el 'src' de abajo para que coincida con el nombre de tu archivo.
+           */}
+           <video
+             className="w-full h-full object-cover" // object-cover se asegura que el video llene el espacio sin distorsionarse
+             src="\src\video\videoUmai.mp4"
+             controls
+             loop
+             autoPlay
+             muted
+             playsInline // Requerido para 'autoPlay' en iOS
+             
+           >
+             Tu navegador no soporta el tag de video.
+           </video>
+         </motion.div>
         </div>
 
         {/* --- 2. Información del Equipo --- */}

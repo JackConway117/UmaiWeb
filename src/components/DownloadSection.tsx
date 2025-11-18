@@ -1,13 +1,6 @@
-import { Apple, Play } from "lucide-react";
+import { Download } from "lucide-react";
 
 export default function DownloadSection() {
-  const handleAppStore = () => {
-    alert("Redirigiendo a App Store...");
-  };
-
-  const handlePlayStore = () => {
-    alert("Redirigiendo a Google Play Store...");
-  };
 
   return (
     
@@ -32,24 +25,13 @@ export default function DownloadSection() {
          
           <div className="flex flex-col sm:flex-row gap-4">
             <button
-              onClick={handleAppStore}
-              className="flex items-center gap-3 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-900 transition italic"
-            >
-              <Apple size={28} />
-              <div className="text-left">
-                <p className="text-xs italic">Download on the</p>
-                <p className="text-lg font-semibold italic">App Store</p>
-              </div>
-            </button>
-
-            <button
-              onClick={handlePlayStore}
+              
               className="flex items-center gap-3 bg-gray-200 px-6 py-3 rounded-xl hover:bg-gray-300 transition italic"
             >
-              <Play size={28} className="text-green-600" />
+              <Download size={28} className="text-green-600" />
               <div className="text-left">
-                <p className="text-xs italic">GET IT ON</p>
-                <p className="text-lg font-semibold italic">Google Play</p>
+                <p className="text-xs italic">click and</p>
+                <p className="text-lg font-semibold italic">Download</p>
               </div>
             </button>
           </div>

@@ -33,7 +33,6 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4 italic">Explora</h4>
             <ul className="space-y-2 text-gray-700 italic">
               <li><a href="#" className="hover:text-gray-900 transition italic">Inicio</a></li>
-              <li><a href="#" className="hover:text-gray-900 transition italic">Puestos de comida</a></li>
               <li><a href="#sobre-nosotros" className="hover:text-gray-900 transition italic">Sobre Nosotros</a></li>
               <li><a href="#descargas" className="hover:text-gray-900 transition italic">Descargar</a></li>
             </ul>

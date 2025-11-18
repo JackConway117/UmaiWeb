@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import ExploreDishes from "./components/ExploreDishes";
+// import ExploreDishes from "./components/ExploreDishes";
 import DownloadSection from "./components/DownloadSection";
 import Footer from "./components/Footer";
 import AboutUsSection from "./components/AboutUsSection";
@@ -24,7 +24,7 @@ function App() {
       <main>
           <>
             <HeroSection />
-            <ExploreDishes />
+            {/* <ExploreDishes /> */}
             <AboutUsSection />
             <DownloadSection />
           </>
