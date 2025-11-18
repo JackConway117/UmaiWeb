@@ -6,6 +6,7 @@ export default function HeroSection() {
   const pinkMain = "#FF7B7B";
   const pinkHover = "#F19292";
   const pinkLight = "#FADCDC";
+  const downloadButton = "#2196f3";
   const [fav, setFav] = useState(false);
 
   return (
@@ -33,7 +34,7 @@ export default function HeroSection() {
             Presentamos UMAI
           </h1>
 
-          <p className="text-base md:text-lg text-gray-700 leading-relaxed italic">
+          <p className="text-base md:text-lg text-black+ leading-relaxed italic">
             La única guía de restaurantes donde "comer con los ojos" es solo el primer paso.
           </p>
 
@@ -45,7 +46,7 @@ export default function HeroSection() {
               }}
               className="px-6 py-2 text-white rounded-full font-medium text-base shadow-md transition-transform transform hover:-translate-y-0.5 italic"
               style={{
-                background: `linear-gradient(90deg, ${pinkMain}, ${pinkHover})`,
+                background: `linear-gradient(90deg, ${downloadButton}, ${downloadButton})`,
               }}
             >
               Descarga Ahora
@@ -67,7 +68,6 @@ export default function HeroSection() {
         {/* Right: mockup teléfono */}
         <div className="relative flex justify-center lg:justify-end z-10">
           
-          {/* Mockup del teléfono - Reemplazado por un marcador de posición */}
           <EscenaSpline />
 
         </div>

@@ -5,41 +5,41 @@ import { Github, Linkedin } from "lucide-react";
 // Datos de ejemplo para los miembros del equipo
 const teamMembers = [
   {
-    name: "Alex Rodríguez",
+    name: "Hector Jose Diaz Sandate",
     role: "Desarrollador Full Stack",
-    bio: "Apasionado por crear experiencias de usuario fluidas y eficientes, conectando el front-end con la lógica del servidor.",
+    bio: "Arquitecto de sistemas robustos y bases de datos, asegurando que la infraestructura de UMAI sea segura, escalable y de alto rendimiento.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     github: "#",
     linkedin: "#",
   },
     {
-    name: "Alex Rodríguez",
-    role: "Desarrollador Full Stack",
-    bio: "Apasionado por crear experiencias de usuario fluidas y eficientes, conectando el front-end con la lógica del servidor.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Diego Martinez Ramirez",
+    role: "Diseñadora UX/UI",
+    bio: "Enfocado en diseñar interfaces intuitivas, accesibles y estéticamente agradables que los usuarios amen.",
+    image: "/images/Diego.jpg",
     github: "#",
     linkedin: "#",
   },
   {
-    name: "Maria González",
+    name: "Alann Beltran Monarrez",
+    role: "Desarrollador Full Stack y de videojuego",
+    bio: "Desarrollador híbrido que combina la arquitectura web Full Stack con la lógica de videojuegos para crear experiencias interactivas únicas y envolventes.",
+    image: "/images/Alann.jpg",
+    github: "#",
+    linkedin: "#",
+  },
+  {
+    name: "Jasiel Solis Garcia",
     role: "Diseñadora UX/UI",
     bio: "Enfocada en diseñar interfaces intuitivas, accesibles y estéticamente agradables que los usuarios amen.",
-    image: "https://randomuser.me/api/portraits/women/26.jpg",
-    github: "#",
-    linkedin: "#",
-  },
-  {
-    name: "Carlos Sánchez",
-    role: "Gerente de Proyecto / Marketing",
-    bio: "Conectando UMAI con los usuarios y restaurantes correctos, asegurando que nuestra visión llegue a todos.",
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    image: "/images/Jasiel.jpg",
     github: "#",
     linkedin: "#",
   },
     {
-    name: "Carlos Sánchez",
-    role: "Gerente de Proyecto / Marketing",
-    bio: "Conectando UMAI con los usuarios y restaurantes correctos, asegurando que nuestra visión llegue a todos.",
+    name: "Emanuel Graciano Santillan",
+    role: "Desarrollador Web",
+    bio: "Encargado del desarrollo front-end web, asegurando una experiencia de usuario.",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
     github: "#",
     linkedin: "#",
@@ -77,19 +77,15 @@ export default function AboutUsSection() {
            whileInView={{ opacity: 1, scale: 1 }}
            transition={{ duration: 0.5 }}
          >
-           {/*
-             ¡IMPORTANTE!
-             1. Asegúrate de que tu video (ej. "video-demo.mp4") esté en la carpeta 'public' de tu proyecto.
-             2. Cambia el 'src' de abajo para que coincida con el nombre de tu archivo.
-           */}
+ 
            <video
              className="w-full h-full object-cover" // object-cover se asegura que el video llene el espacio sin distorsionarse
-             src="\src\video\videoUmai.mp4"
+             src="\video\videoUmai.mp4"
              controls
              loop
              autoPlay
              muted
-             playsInline // Requerido para 'autoPlay' en iOS
+             playsInline 
              
            >
              Tu navegador no soporta el tag de video.
@@ -106,7 +102,6 @@ export default function AboutUsSection() {
             El talento detrás de cada función, comprometidos con llevar esta demo al siguiente nivel.
           </p>
 
-          {/* Grid del equipo -> Cambiado a Flexbox para centrar filas incompletas */}
           <div className="flex flex-wrap gap-10 justify-center">
             {teamMembers.map((member, index) => (
               <motion.div
