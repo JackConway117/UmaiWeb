@@ -14,7 +14,7 @@ const teamMembers = [
   },
     {
     name: "Diego Martinez Ramirez",
-    role: "Diseñadora UX/UI",
+    role: "Diseñador UX/UI",
     bio: "Enfocado en diseñar interfaces intuitivas, accesibles y estéticamente agradables que los usuarios amen.",
     image: "/images/Diego.jpg",
     github: "#",
@@ -30,7 +30,7 @@ const teamMembers = [
   },
   {
     name: "Jasiel Solis Garcia",
-    role: "Diseñadora UX/UI",
+    role: "Diseñador UX/UI",
     bio: "Enfocada en diseñar interfaces intuitivas, accesibles y estéticamente agradables que los usuarios amen.",
     image: "/images/Jasiel.jpg",
     github: "#",
